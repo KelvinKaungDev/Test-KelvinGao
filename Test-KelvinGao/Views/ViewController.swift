@@ -87,6 +87,7 @@ class ViewController: UIViewController {
            monitor.cancel()
        }
 }
+//MARK: - TestData
 
 extension ViewController : TestDataManagerDelegate {
     func allDatas(data: TestModel) {
@@ -113,6 +114,7 @@ extension ViewController : TestDataManagerDelegate {
         }
     }
 }
+//MARK: - UICollectionView
 
 extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -184,6 +186,8 @@ extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource,
     }
     
 }
+
+//MARK: - UIImageView
 
 extension UIImageView {
     func downloaded(from url: URL, contentMode mode: ContentMode = .scaleAspectFit) {
