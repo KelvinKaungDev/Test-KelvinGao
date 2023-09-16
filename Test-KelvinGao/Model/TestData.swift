@@ -1,6 +1,6 @@
 import Foundation
 
-struct DecodeModel : Codable {
+struct TestData : Codable {
     var message : String
     var responseObject : Responses
 }
@@ -10,8 +10,9 @@ struct Responses : Codable {
 }
 
 struct Contents : Codable {
-    var items : [Items]
-    var subTitle : String
+    var items : [Items]?
+    var title : String
+    var coverUrl : String?
 }
 
 struct Items : Codable {

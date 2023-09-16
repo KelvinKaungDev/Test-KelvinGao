@@ -1,8 +1,16 @@
-//
-//  ThemeModel.swift
-//  Test-KelvinGao
-//
-//  Created by Kelvin Gao  on 15/9/2566 BE.
-//
-
+import UIKit
 import Foundation
+
+enum ThemeModel : Int {
+    case Light
+    case Dark
+    
+    func getUserInterfaceStyle() -> UIUserInterfaceStyle {
+        switch self {
+            case .Light :
+                return .light
+            case .Dark :
+                return .dark
+        }
+    }
+}
